@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Variables*/
+:root {
+  --bg-color: #180030;
+  --font-color: #0fff8c;
+  --text-color: #f9f9f9;
+  --borders-color: #481d72;
+  --focus-color: #cae0be;
+
+  /*fonts*/
+  --font1: 'Poppins', sans-serif;
+  --font2: 'DM Sans', sans-serif;
+}
+
+#title {
+  color: var(--font-color);
+  font-family: var(--font2);
+  margin-left: 7%;
+}
+
+#subtitle {
+  color: var(--font-color);
+  font-family: var(--font1);
+  margin-left: 10%;
+}
+
+#check {
+  display: inline-block;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-size: 1rem;
+  margin-left: 36%;
+  margin-top: 2%;
+  justify-content: center;
+  font-family: var(--font2);
+}
+
+fieldset {
+  border: 0;
+}
+
+label {
+  color: var(--text-color);
+}
+
+input,
+select,
+textarea,
+button {
+  border-radius: 7px;
+}
+
+.field {
+  margin-bottom: 1em;
+}
+
+.field label {
+  margin-bottom: 0.2em;
+  color: var(--text-color);
+  display: block;
+}
+
+fieldset.group .field {
+  float: left;
+  margin-right: 1em;
+}
+
+.field input[type='text'],
+.field input[type='email'],
+.field select,
+.field textarea {
+  padding: 0.2em;
+  border: 1px solid var(--borders-color);
+  display: block;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.field select option {
+  padding-right: 1em;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  background: var(--focus-color);
+}
+
+.button {
+  padding: 0.3em;
+  position: absolute;
+
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-size: 1em;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background: #e3ceec;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" media="screen" />
+
+    <!-- FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Cadastro DEVs</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Cadastro de DEVs</h1>
+      <p id="subtitle">Complete com seus dados</p>
+      <br />
+    </div>
+
+    <form>
+      <fieldset class="group">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" required />
+        </div>
+
+        <div class="field">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" name="sobrenome" id="sobrenome" required />
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div class="field">
+        <label>De qual lado da aplicação você desenvolve?</label>
+        <label>
+          <input type="radio" name="devweb" value="frontend" checked />Front-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="backend" />Back-end
+        </label>
+        <label>
+          <input type="radio" name="devweb" value="fullstack" />Fullstack
+        </label>
+      </div>
+
+      <div class="field">
+        <label for="senioridade">Senioridade</label>
+        <select id="senioridade">
+          <option selected disabled value="">Selecione</option>
+          <option>Júnior</option>
+          <option>Pleno</option>
+          <option>Sênior</option>
+        </select>
+      </div>
+      <fieldset class="group">
+        <div id="check">
+          <label>Selecione as tecnologias que você ulitiza:</label><br /><br />
+          <input type="checkbox" name="tech1" id="tech1" value="HTML" />
+          <label for="tech1">HTML</label>
+
+          <input type="checkbox" name="tech2" id="tech2" value="CSS" />
+          <label for="tech2">CSS</label>
+
+          <input type="checkbox" name="tech3" id="tech3" value="Javascript" />
+          <label for="tech3">Javascript</label>
+
+          <input type="checkbox" name="tech4" id="tech4" value="Java" />
+          <label for="tech4">Java</label>
+
+          <input type="checkbox" name="tech5" id="tech5" value="PHP" />
+          <label for="tech5">PHP</label>
+
+          <input type="checkbox" name="tech6" id="tech6" value="C#" />
+          <label for="tech6">C#</label>
+
+          <input type="checkbox" name="tech7" id="tech7" value="Python" />
+          <label for="tech7">Python</label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <br />
+        <label>Conte um pouco mais sobre você e suas experiências:</label>
+        <textarea row="6" id="experiencia" style="width: 26em"></textarea>
+      </div>
+      <button class="button" type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
